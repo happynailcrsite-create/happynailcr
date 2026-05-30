@@ -13,8 +13,8 @@
 <!-- ═══ GEO META — Geolocation para búsquedas locales ═══ -->
 <meta name="geo.region" content="CR-C"/>
 <meta name="geo.placename" content="Tres Ríos, La Unión, Cartago, Costa Rica"/>
-<meta name="geo.position" content="9.90886;-84.00921"/>
-<meta name="ICBM" content="9.90886, -84.00921"/>
+<meta name="geo.position" content="9.90905;-84.00915"/>
+<meta name="ICBM" content="9.90905, -84.00915"/>
 
 <!-- ═══ OPEN GRAPH ═══ -->
 <meta property="og:type" content="business.business"/>
@@ -46,11 +46,11 @@
   "url": "https://www.happynailcr.com",
   "logo": "https://www.happynailcr.com/logo-nav.png",
   "image": "https://www.happynailcr.com/logo-nav.png",
-  "description": "Salón de manicura y pedicura con más de 7 años de experiencia. Especialistas en Gel X, Acrílico, Semipermanente, Luminary y Rubber. Ubicados en Plaza Bambú, 2do. piso, Tres Ríos, Cartago.",
+  "description": "Salón de manicura y pedicura con más de 7 años de experiencia. Especialistas en Gel X, Acrílico, Semipermanente, Luminary y Rubber. Ubicados en Plaza Bambú, segundo piso, Calle Vieja, Tres Ríos, Cartago, Cartago.",
   "telephone": "+50663529946",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Plaza Bambú, 2do. piso, Carretera Vieja a Tres Ríos",
+    "streetAddress": "Plaza Bambú, segundo piso, Calle Vieja, Tres Ríos",
     "addressLocality": "Tres Ríos",
     "addressRegion": "Cartago",
     "addressCountry": "CR",
@@ -58,10 +58,10 @@
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 9.90886,
-    "longitude": -84.00921
+    "latitude": 9.90905,
+    "longitude": -84.00915
   },
-  "hasMap": "https://maps.app.goo.gl/WX5R+G8",
+  "hasMap": "https://plus.codes/WX5R+G8",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -135,41 +135,19 @@
 ═══════════════════════════════════════ */
 :root{
   --cd:#F7F3EE; --cream:#EDE4D8;
-  --champ:#D4B896; --champ2:#B89570;
-  --rose:#E8B4B8; --rose2:#D4878E;
+  --champ:#D4B896; --champ2:#8B4F6A;
+  --rose:#C97B8A; --rose2:#A8364A;
   --plum:#4A2040; --plum2:#331528;
-  --mocha:#3D2B1F; --muted:#7A6458;
-  --border:rgba(61,43,31,0.12);
+  --mocha:#2D0A1A; --muted:#5C2A3A;
+  --border:rgba(74,32,64,0.15);
   --wa:#25D366;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--cd);color:var(--mocha);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-.skip{position:absolute;top:-40px;left:0;background:var(--plum);color:#fff;padding:8px 16px;z-index:9999;border-radius:0 0 4px 0}
+.skip{position:absolute;top:-40px;left:0;background:#FDF8F6;color:#fff;padding:8px 16px;z-index:9999;border-radius:0 0 4px 0}
 .skip:focus{top:0}
 .container{max-width:1120px;margin:0 auto;padding:0 28px}
-
-/* ── NAV ── */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:900;
-  background:rgba(247,243,238,0.96);
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border);
-  height:68px;padding:0 28px;
-  display:flex;align-items:center;justify-content:space-between;
-}
-/* Logo en nav — usa logo-nav.png (fondo claro) */
-.nav-logo-link{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
-.nav-logo{
-  height:44px;width:auto;display:block;
-  object-fit:contain;
-}
-.nav-links{display:flex;gap:28px;list-style:none}
-.nav-links a{font-size:0.78rem;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;padding-bottom:2px;border-bottom:1.5px solid transparent}
-.nav-links a:hover,.nav-links a.active{color:var(--plum);border-bottom-color:var(--rose2)}
-.nav-wa{background:var(--wa);color:#fff;padding:10px 20px;border-radius:50px;font-size:0.78rem;font-weight:500;letter-spacing:0.06em;text-decoration:none;display:flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;box-shadow:0 2px 16px rgba(37,211,102,0.25);white-space:nowrap;flex-shrink:0}
-.nav-wa:hover{transform:translateY(-1px);box-shadow:0 4px 24px rgba(37,211,102,0.35)}
-.nav-wa svg{width:15px;height:15px;fill:#fff;flex-shrink:0}
 
 /* ── HERO ── */
 #hero{min-height:100svh;background:var(--plum2);display:flex;align-items:center;padding-top:68px;position:relative;overflow:hidden}
@@ -177,7 +155,7 @@ nav{
 .hero-orbs::before{content:'';position:absolute;top:-10%;right:-10%;width:55vw;height:55vw;max-width:680px;max-height:680px;border-radius:50%;background:radial-gradient(circle,rgba(232,180,184,0.16) 0%,transparent 70%)}
 .hero-orbs::after{content:'';position:absolute;bottom:-20%;left:-15%;width:45vw;height:45vw;max-width:560px;max-height:560px;border-radius:50%;background:radial-gradient(circle,rgba(212,184,150,0.10) 0%,transparent 65%)}
 /* Hero logo — usa logo.png (transparente, letras blancas) */
-.hero-logo{height:90px;width:auto;display:block;margin-bottom:28px;object-fit:contain}
+/* removed */
 .hero-inner{position:relative;z-index:2;padding:72px 0;display:grid;grid-template-columns:1fr 400px;gap:80px;align-items:center}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;font-size:0.71rem;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:var(--champ);background:rgba(212,184,150,0.1);border:1px solid rgba(212,184,150,0.28);padding:7px 16px;border-radius:50px;margin-bottom:20px}
 .hero-badge::before{content:'✦';font-size:0.62rem}
@@ -205,59 +183,59 @@ nav{
 
 /* ── SECTION COMMONS ── */
 section{padding:108px 0}
-.sec-eyebrow{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--champ2);font-weight:500;display:block;margin-bottom:12px;text-align:center}
-.sec-h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.2vw,2.7rem);font-weight:400;text-align:center;color:var(--mocha);line-height:1.2}
+.sec-eyebrow{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:#7A2040;font-weight:600;display:block;margin-bottom:12px;text-align:center}
+.sec-h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.2vw,2.7rem);font-weight:400;text-align:center;color:#2D0A1A;line-height:1.2}
 .sec-h2 em{font-style:italic;color:var(--rose2)}
-.sec-sub{text-align:center;color:var(--muted);max-width:500px;margin:14px auto 0;font-size:0.93rem}
+.sec-sub{text-align:center;color:#5C2A3A;max-width:500px;margin:14px auto 0;font-size:0.93rem;font-weight:400}
 .divider{width:38px;height:2px;background:linear-gradient(90deg,var(--rose2),var(--champ));border-radius:2px;margin:18px auto}
 
 /* ── NOSOTRAS ── */
 #nosotras{background:var(--cd)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:76px;align-items:center;margin-top:68px}
-.about-card-dark{background:var(--plum);border-radius:16px;padding:52px 44px;color:#F7F3EE;position:relative;z-index:1}
-.about-quote{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:400;font-style:italic;line-height:1.3;color:#F7F3EE;margin-bottom:18px}
+
+
 .about-quote span{color:var(--rose)}
-.about-attr{font-size:0.76rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(212,184,150,0.65)}
-.deco-c{position:absolute;border:1px solid var(--champ);border-radius:50%;opacity:0.22}
-.dc1{width:110px;height:110px;top:-28px;right:-28px}
-.dc2{width:60px;height:60px;bottom:-14px;left:-14px;background:var(--rose2);opacity:0.14;border:none}
-.about-body p{font-size:0.93rem;color:var(--muted);margin-bottom:16px;line-height:1.8}
-.about-body p strong{color:var(--mocha);font-weight:500}
+
+
+
+
+.about-body p{font-size:0.93rem;color:#3D1020;margin-bottom:16px;line-height:1.8}
+.about-body p strong{color:#2D0A1A;font-weight:700}
 .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
 .astat{padding:16px 18px;background:var(--cream);border-radius:10px;border:1px solid var(--border)}
-.astat-n{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:400;color:var(--rose2);line-height:1}
-.astat-l{font-size:0.75rem;color:var(--muted);margin-top:4px}
+.astat-n{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:700;color:#4A2040;line-height:1}
+.astat-l{font-size:0.75rem;color:#5C2A3A;font-weight:500;margin-top:4px}
 
 /* ── SERVICIOS ── */
 #servicios{background:var(--cream)}
 .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:2px;margin-top:56px;border-radius:14px;overflow:hidden}
 .svc-item{background:var(--cd);padding:34px 28px;transition:background .3s}
-.svc-item:hover{background:var(--plum)}
+.svc-item:hover{background:#4A2040}
 .svc-item:hover .svc-n,.svc-item:hover .svc-d{color:#F7F3EE}
 .svc-item:hover .svc-p{color:var(--rose)}
 .svc-item:hover .svc-glyph{transform:scale(1.12)}
 .svc-glyph{font-size:1.5rem;margin-bottom:14px;display:block;transition:transform .3s}
-.svc-n{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:400;color:var(--mocha);margin-bottom:6px;transition:color .3s}
-.svc-d{font-size:0.78rem;color:var(--muted);margin-bottom:12px;line-height:1.5;transition:color .3s}
-.svc-p{font-size:0.96rem;font-weight:500;color:var(--rose2);transition:color .3s}
+.svc-n{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:700;color:#2D0A1A;margin-bottom:6px;transition:color .3s}
+.svc-d{font-size:0.78rem;color:#5C2A3A;margin-bottom:12px;line-height:1.5;transition:color .3s}
+.svc-p{font-size:0.96rem;font-weight:700;color:#A8364A;transition:color .3s}
 
 /* ── PRECIOS ── */
 #precios{background:var(--cd)}
 .prices-layout{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:60px}
-.price-col h3{font-family:'Playfair Display',serif;font-size:1.18rem;font-weight:400;color:var(--mocha);padding-bottom:10px;border-bottom:1px solid var(--border);margin-bottom:4px}
+.price-col h3{font-family:'Playfair Display',serif;font-size:1.18rem;font-weight:400;color:var(--mocha);padding-bottom:10px;border-bottom:1px solid rgba(74,32,64,0.12);margin-bottom:4px}
 .prow{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(61,43,31,0.055)}
 .prow:last-child{border-bottom:none}
-.prow-n{font-size:0.86rem;color:var(--mocha)}
-.prow-p{font-size:0.9rem;font-weight:500;color:var(--rose2);white-space:nowrap}
-.promo-card{grid-column:1/-1;background:var(--plum);border-radius:16px;padding:40px 44px;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
-.pc-tag{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--champ);font-weight:500}
-.pc-left h3{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:400;color:#F7F3EE;margin:8px 0 7px}
-.pc-left p{font-size:0.86rem;color:rgba(247,243,238,0.52)}
-.pc-price{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:400;color:var(--rose);line-height:1;text-align:right}
-.pc-price small{display:block;font-family:'DM Sans',sans-serif;font-size:0.76rem;color:rgba(247,243,238,0.38);font-weight:300;margin-top:4px}
-.btn-promo{display:inline-flex;align-items:center;gap:8px;margin-top:18px;background:var(--rose2);color:#fff;padding:12px 24px;border-radius:50px;font-size:0.8rem;font-weight:500;letter-spacing:0.04em;text-decoration:none;transition:opacity .2s,transform .2s}
-.btn-promo:hover{opacity:0.88;transform:translateY(-1px)}
-.btn-promo svg{width:14px;height:14px;fill:#fff}
+.prow-n{font-size:0.86rem;color:#1A0010;font-weight:500}
+.prow-p{font-size:0.9rem;font-weight:700;color:#A8364A;white-space:nowrap}
+
+
+
+
+
+
+
+
+
 .prices-note{grid-column:1/-1;text-align:center;font-size:0.8rem;color:var(--muted);margin-top:6px}
 .prices-note a{color:var(--rose2);text-decoration:underline;text-underline-offset:3px}
 
@@ -266,8 +244,8 @@ section{padding:108px 0}
 .testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;margin-top:56px}
 .testi-card{background:var(--cd);border-radius:14px;border:1px solid var(--border);padding:30px 26px}
 .testi-stars{color:var(--champ2);font-size:0.88rem;margin-bottom:14px;letter-spacing:2px}
-.testi-text{font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;color:var(--mocha);line-height:1.6;margin-bottom:18px}
-.testi-author{font-size:0.78rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)}
+.testi-text{font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;color:#2D0A1A;line-height:1.6;margin-bottom:18px}
+.testi-author{font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#4A2040}
 .testi-service{font-size:0.76rem;color:var(--champ2);margin-top:3px}
 
 /* ── REDES ── */
@@ -293,8 +271,8 @@ section{padding:108px 0}
 #agendar{background:var(--cd)}
 .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:60px}
 .step{text-align:center;padding:0 16px}
-.step-num{width:54px;height:54px;border-radius:50%;border:1.5px solid var(--rose2);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:400;color:var(--rose2)}
-.step h4{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:400;color:var(--mocha);margin-bottom:9px}
+.step-num{width:54px;height:54px;border-radius:50%;border:2px solid #4A2040;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#4A2040}
+.step h4{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:700;color:#2D0A1A;margin-bottom:9px}
 .step p{font-size:0.86rem;color:var(--muted);line-height:1.7}
 .steps-cta{text-align:center;margin-top:48px;display:flex;justify-content:center;flex-wrap:wrap;gap:14px}
 
@@ -336,7 +314,7 @@ section{padding:108px 0}
 /* ── FOOTER ── */
 footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
 /* Footer usa logo.png (transparente, letras blancas) */
-.footer-logo-img{height:54px;width:auto;margin:0 auto 12px;display:block;object-fit:contain}
+/* removed */
 .footer-tag{font-size:0.71rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--champ2);margin-bottom:22px;display:block}
 .footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;list-style:none;margin-bottom:24px}
 .footer-nav a{font-size:0.76rem;letter-spacing:0.06em;color:rgba(247,243,238,0.32);text-decoration:none;transition:color .2s}
@@ -356,14 +334,14 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
   .hero-card{display:none}
   .about-grid,.redes-inner,.contact-grid{grid-template-columns:1fr;gap:40px}
   .prices-layout{grid-template-columns:1fr}
-  .promo-card{flex-direction:column;gap:18px}
-  .pc-price{text-align:left}
+  
+  
   .steps-grid{grid-template-columns:1fr;gap:28px;max-width:340px;margin-left:auto;margin-right:auto}
   .frow{grid-template-columns:1fr}
 }
 @media(max-width:600px){
   nav{padding:0 16px;height:60px}
-  .nav-links{display:none}
+  .nav-links{display:none}/* mobile */
   .nav-logo{height:36px}
   .container{padding:0 16px}
   section{padding:76px 0}
@@ -371,6 +349,299 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
   .svc-grid{grid-template-columns:1fr 1fr}
   .redes-cards{grid-template-columns:1fr 1fr}
 }
+
+/* ── LOGO TEXT STYLES ──────────────────────────────── */
+/* NAV logo */
+.nav-logo-link{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.logo-text{display:flex;flex-direction:column;line-height:1.1;gap:1px}
+.logo-main{
+  font-family:'Playfair Display',serif;
+  font-size:1.3rem;font-weight:700;
+  color:#3D0A2A !important;
+  letter-spacing:0.01em;
+  line-height:1;
+}
+.logo-sub{
+  font-size:0.52rem;font-weight:400;
+  letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--rose2);
+  line-height:1;
+}
+
+/* HERO logo */
+.hero-logo-text{
+  display:flex;flex-direction:column;
+  margin-bottom:28px;
+}
+.hero-logo-main{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2.4rem,4.5vw,3.8rem);
+  font-weight:700;font-style:italic;
+  color:#F7F3EE;
+  letter-spacing:0.01em;line-height:1;
+}
+.hero-logo-sub{
+  font-size:0.72rem;font-weight:400;
+  letter-spacing:0.28em;text-transform:uppercase;
+  color:var(--champ);
+  margin-top:6px;
+}
+
+/* FOOTER logo */
+.footer-logo-text{
+  display:flex;flex-direction:column;
+  align-items:center;
+  margin-bottom:12px;
+}
+.footer-logo-main{
+  font-family:'Playfair Display',serif;
+  font-size:1.6rem;font-weight:700;font-style:italic;
+  color:#F7F3EE;letter-spacing:0.01em;line-height:1;
+}
+.footer-logo-sub{
+  font-size:0.55rem;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--champ2);
+  margin-top:5px;
+}
+/* ─────────────────────────────────────────────────── */
+
+/* ════ NAV — REESCRITO DESDE CERO ════ */
+#sitenav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
+  height: 64px;
+  padding: 0 32px;
+  background: #FADADD;                /* rosa pastel sólido */
+  border-bottom: 2px solid #C97B8A;   /* línea vino suave */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+/* LOGO texto */
+.nl-brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 1.1;
+  flex-shrink: 0;
+}
+.nl-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3D0A2A;        /* vino oscuro */
+  line-height: 1;
+}
+.nl-sub {
+  font-size: 0.48rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #7A2040;        /* vino medio */
+  margin-top: 3px;
+}
+/* LINKS */
+.nl-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0; padding: 0;
+}
+.nl-links a {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3D0A2A;        /* vino oscuro */
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+.nl-links a:hover {
+  color: #C97B8A;
+  border-bottom-color: #C97B8A;
+}
+/* BOTÓN WA */
+.nl-wa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.nl-wa:hover { opacity: 0.88; transform: translateY(-1px); }
+/* Empujar hero para que no quede debajo del nav */
+#hero { padding-top: 64px; }
+/* Mobile: ocultar links, mantener logo y WA */
+@media (max-width: 680px) {
+  .nl-links { display: none; }
+  #sitenav { padding: 0 16px; }
+}
+/* ════════════════════════════════════ */
+
+/* MS Forms embed */
+.ms-form-wrap{margin-bottom:20px;text-align:center}
+.ms-form-title{font-size:0.82rem;color:#5C2A3A;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px}
+.ms-form-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background:#4A2040;color:#FADADD;
+  padding:14px 28px;border-radius:50px;
+  font-size:0.88rem;font-weight:600;letter-spacing:0.04em;
+  text-decoration:none;transition:opacity .2s,transform .2s;
+  box-shadow:0 4px 16px rgba(74,32,64,0.3);
+}
+.ms-form-btn:hover{opacity:0.88;transform:translateY(-1px)}
+.ms-form-or{font-size:0.75rem;color:#8B4F6A;margin-top:12px;letter-spacing:0.1em}
+
+/* ── PROMO CARD NUEVA ── */
+.promo-banner {
+  grid-column: 1 / -1;
+  background: #3D0A2A;
+  border-radius: 12px;
+  padding: 40px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.promo-banner-left {}
+.promo-banner-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FADADD;
+  display: inline-block;
+  border: 1px solid rgba(250,218,221,0.4);
+  padding: 4px 14px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+}
+.promo-banner-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.promo-banner-text {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+  max-width: 440px;
+}
+.promo-banner-right {
+  text-align: right;
+  flex-shrink: 0;
+}
+.promo-banner-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #FADADD;
+  line-height: 1;
+}
+.promo-banner-sub {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.65);
+  margin-top: 6px;
+  display: block;
+}
+.promo-banner-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+  background: #C97B8A;
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  padding: 13px 26px;
+  border-radius: 50px;
+  transition: background 0.2s, transform 0.2s;
+}
+.promo-banner-btn:hover {
+  background: #A8364A;
+  transform: translateY(-1px);
+}
+.promo-banner-btn svg { width: 15px; height: 15px; fill: #fff; }
+@media(max-width:680px){
+  .promo-banner { flex-direction: column; padding: 28px 24px; }
+  .promo-banner-right { text-align: left; }
+}
+/* ────────────────────────── */
+
+/* ── CUADRO CITA NOSOTRAS — NUEVO ── */
+.quote-box {
+  background: #3D0A2A;
+  border-radius: 16px;
+  padding: 52px 44px;
+  position: relative;
+  overflow: hidden;
+}
+.quote-box::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 9rem;
+  color: rgba(250,218,221,0.15);
+  line-height: 1;
+  pointer-events: none;
+}
+.quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #FFFFFF;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.quote-text span {
+  color: #FADADD;
+  font-weight: 700;
+}
+.quote-author {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(250,218,221,0.75);
+  position: relative;
+  z-index: 1;
+}
+.quote-deco {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(250,218,221,0.2);
+  bottom: -30px;
+  right: -30px;
+}
+/* ─────────────────────────── */
 </style>
 </head>
 <body>
@@ -378,20 +649,24 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
 <a href="#main" class="skip">Saltar al contenido principal</a>
 
 <!-- ══ NAV ══════════════════════════════════════════════════════ -->
-<nav role="navigation" aria-label="Navegación principal">
-  <a href="#" class="nav-logo-link" aria-label="Happy Nail — Inicio">
-    <!-- logo-nav.png: fondo transparente, texto oscuro — para nav claro -->
-    <img src="logo-nav.png" alt="Happy Nail — Manicura & Pedicura, Tres Ríos" class="nav-logo" width="180" height="44"/>
+
+
+
+<!-- ══ NAV ══ -->
+<nav id="sitenav">
+  <a href="#" class="nl-brand">
+    <span class="nl-name">Happy Nail</span>
+    <span class="nl-sub">Manicura &amp; Pedicura</span>
   </a>
-  <ul class="nav-links" role="list">
+  <ul class="nl-links">
     <li><a href="#nosotras">Nosotras</a></li>
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#precios">Precios</a></li>
     <li><a href="#testimonios">Reseñas</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
-  <a href="https://wa.me/50663529946?text=Hola%2C%20quiero%20agendar%20una%20cita%20en%20Happy%20Nail%20%F0%9F%92…" target="_blank" rel="noopener noreferrer" class="nav-wa" aria-label="Agendar cita por WhatsApp">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2.003a9.997 9.997 0 00-8.591 15.095L2 22l5.032-1.363A9.997 9.997 0 1012.004 2.003zm0 18.257a8.26 8.26 0 01-4.216-1.155l-.302-.18-3.136.849.837-3.07-.197-.314A8.26 8.26 0 1112.004 20.26z"/></svg>
+  <a href="https://wa.me/50663529946?text=Hola%2C%20quiero%20agendar%20una%20cita%20%F0%9F%92…" target="_blank" rel="noopener" class="nl-wa">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2a10 10 0 00-8.591 15.095L2 22l5.032-1.363A10 10 0 1012 2zm0 18.257a8.257 8.257 0 01-4.216-1.155l-.302-.18-3.136.849.837-3.07-.197-.314A8.257 8.257 0 1112 20.257z"/></svg>
     Agendar cita
   </a>
 </nav>
@@ -404,9 +679,11 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
   <div class="container">
     <div class="hero-inner">
       <div>
-        <!-- logo.png: transparente, letras blancas — para fondo oscuro -->
-        <img src="logo.png" alt="Happy Nail" class="hero-logo" width="320" height="90" loading="eager"/>
-        <span class="hero-badge">Plaza Bambú, 2do. piso · Tres Ríos · Cartago</span>
+        <div class="hero-logo-text" aria-label="Happy Nail">
+          <span class="hero-logo-main">Happy Nail</span>
+          <span class="hero-logo-sub">Manicura &amp; Pedicura</span>
+        </div>
+        <span class="hero-badge">Plaza Bambú, 2do. piso · Calle Vieja · Tres Ríos · Cartago</span>
         <h1 class="hero-h1">Uñas que<br><em>hablan</em><br>por vos.</h1>
         <p class="hero-sub">Más de 7 años cuidando tus manos y pies. Técnicas profesionales y productos de primera calidad en Tres Ríos.</p>
         <div class="hero-btns">
@@ -417,14 +694,11 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
           <a href="#precios" class="btn-ghost">Ver precios</a>
         </div>
       </div>
-      <div class="hero-card" aria-label="Precios destacados">
-        <div class="hero-card-title">Servicios destacados</div>
-        <div class="hpr"><span class="hpr-n">Semipermanente Liso</span><span class="hpr-p">₡11,500</span></div>
-        <div class="hpr"><span class="hpr-n">Gel X</span><span class="hpr-p">₡21,500</span></div>
-        <div class="hpr"><span class="hpr-n">Acrílico</span><span class="hpr-p">₡23,000</span></div>
-        <div class="hpr"><span class="hpr-n">Pedicura</span><span class="hpr-p">₡18,200</span></div>
-        <div class="hpr"><span class="hpr-n">Combo Happy</span><span class="hpr-p">₡26,000</span></div>
+      <div class="hero-card" aria-label="Agendá tu cita">
+        <div class="hero-card-title">¿Lista para lucir uñas perfectas?</div>
+        <p style="color:rgba(247,243,238,0.65);font-size:0.9rem;line-height:1.7;margin-bottom:28px">Más de 7 años de experiencia. Semipermanente, Gel X, Acrílico, Luminary y más. Agendá tu cita en minutos.</p>
         <a href="https://forms.cloud.microsoft/r/Mqj79jZMaJ" target="_blank" rel="noopener noreferrer" class="hero-form-btn">✨ Agendá tu cita aquí</a>
+        <a href="#precios" class="hero-form-btn" style="margin-top:10px;background:transparent;border:1px solid rgba(247,243,238,0.25);color:rgba(247,243,238,0.75);">Ver lista de precios</a>
       </div>
     </div>
   </div>
@@ -438,16 +712,13 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
     <h2 class="sec-h2" id="h-nosotras">No somos solo un salón —<br>somos <em>asesoras de belleza</em></h2>
     <div class="divider" aria-hidden="true"></div>
     <div class="about-grid">
-      <div style="position:relative">
-        <div class="about-card-dark">
-          <p class="about-quote">"Cada detalle importa cuando se trata de <span>vos</span>."</p>
-          <span class="about-attr">— Happy Nail, Plaza Bambú</span>
-        </div>
-        <div class="deco-c dc1" aria-hidden="true"></div>
-        <div class="deco-c dc2" aria-hidden="true"></div>
+            <div class="quote-box">
+        <p class="quote-text">"Cada detalle importa cuando se trata de <span>vos</span>."</p>
+        <span class="quote-author">— Happy Nail, Plaza Bambú</span>
+        <div class="quote-deco" aria-hidden="true"></div>
       </div>
       <div class="about-body">
-        <p>Happy Nail nació de la pasión por el cuidado personal. Somos un salón boutique en <strong>Plaza Bambú, 2do. piso, Tres Ríos</strong> — en la Carretera Vieja a Cartago — donde cada clienta recibe atención personalizada y resultado profesional.</p>
+        <p>Happy Nail nació de la pasión por el cuidado personal. Somos un salón boutique en <strong>Plaza Bambú, segundo piso, Calle Vieja, Tres Ríos, Cartago</strong> — en la Carretera Vieja a Cartago — donde cada clienta recibe atención personalizada y resultado profesional.</p>
         <p>Con <strong>más de 7 años de experiencia</strong>, usamos productos de primera calidad y técnicas siempre actualizadas: desde un semipermanente natural hasta diseños elaborados en Gel X, Acrílico o Luminary.</p>
         <p><strong>Promos nuevas cada mes.</strong> Seguinos en Instagram <strong>@happy.nailcr</strong> o escribinos al <strong>6352 9946</strong> para saber cuál aplica ahora.</p>
         <div class="about-stats">
@@ -469,16 +740,16 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
     <div class="divider" aria-hidden="true"></div>
     <p class="sec-sub">Técnicas profesionales para cada estilo. Calidad garantizada en cada visita.</p>
     <div class="svc-grid" role="list">
-      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">💅</span><div class="svc-n">Semipermanente</div><div class="svc-d">Liso o con diseño. Larga duración y colores vibrantes.</div><div class="svc-p">Desde ₡11,500</div></div>
-      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">✨</span><div class="svc-n">Manicura Semi</div><div class="svc-d">Manicura completa con acabado semipermanente profesional.</div><div class="svc-p">₡15,000</div></div>
-      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">💎</span><div class="svc-n">Gel X</div><div class="svc-d">Extensiones de gel suave, natural y duradero.</div><div class="svc-p">₡21,500</div></div>
-      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🌟</span><div class="svc-n">Acrílico</div><div class="svc-d">Extensiones acrílicas con acabado perfecto y personalizable.</div><div class="svc-p">₡23,000</div></div>
-      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🪨</span><div class="svc-n">Rubber / Calcio</div><div class="svc-d">Base reforzada, ideal para uñas frágiles o dañadas.</div><div class="svc-p">₡16,500</div></div>
-      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🌙</span><div class="svc-n">Luminary</div><div class="svc-d">Acabado premium con efecto espejo y brillo extraordinario.</div><div class="svc-p">₡19,500</div></div>
-      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🌸</span><div class="svc-n">Manicura Rusa</div><div class="svc-d">Técnica de precisión para una cutícula perfecta y duradera.</div><div class="svc-p">₡15,500</div></div>
-      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🦋</span><div class="svc-n">Pedicura</div><div class="svc-d">Relajante y completa. Tus pies merecen lo mejor.</div><div class="svc-p">₡18,200</div></div>
-      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🛡️</span><div class="svc-n">Funda de Acrílico</div><div class="svc-d">Refuerzo protector con acrílico sobre tu uña natural.</div><div class="svc-p">₡16,500</div></div>
-      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">👨</span><div class="svc-n">Servicios para Hombre</div><div class="svc-d">Manicura sin semi y pedicura. Cuidado profesional para ellos.</div><div class="svc-p">Desde ₡12,000</div></div>
+      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">💅</span><div class="svc-n">Semipermanente</div><div class="svc-d">Liso o con diseño. Larga duración y colores vibrantes.</div></div>
+      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">✨</span><div class="svc-n">Manicura Semi</div><div class="svc-d">Manicura completa con acabado semipermanente profesional.</div></div>
+      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">💎</span><div class="svc-n">Gel X</div><div class="svc-d">Extensiones de gel suave, natural y duradero.</div></div>
+      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🌟</span><div class="svc-n">Acrílico</div><div class="svc-d">Extensiones acrílicas con acabado perfecto y personalizable.</div></div>
+      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🪨</span><div class="svc-n">Rubber / Calcio</div><div class="svc-d">Base reforzada, ideal para uñas frágiles o dañadas.</div></div>
+      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🌙</span><div class="svc-n">Luminary</div><div class="svc-d">Acabado premium con efecto espejo y brillo extraordinario.</div></div>
+      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🌸</span><div class="svc-n">Manicura Rusa</div><div class="svc-d">Técnica de precisión para una cutícula perfecta y duradera.</div></div>
+      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🦋</span><div class="svc-n">Pedicura</div><div class="svc-d">Relajante y completa. Tus pies merecen lo mejor.</div></div>
+      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">🛡️</span><div class="svc-n">Funda de Acrílico</div><div class="svc-d">Refuerzo protector con acrílico sobre tu uña natural.</div></div>
+      <div class="svc-item" role="listitem"><span class="svc-glyph" aria-hidden="true">👨</span><div class="svc-n">Servicios para Hombre</div><div class="svc-d">Manicura sin semi y pedicura. Cuidado profesional para ellos.</div></div>
     </div>
   </div>
 </section>
@@ -492,20 +763,23 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
     <p class="sec-sub">Consultanos por WhatsApp sobre promos y descuentos activos del mes.</p>
     <div class="prices-layout">
 
-      <div class="promo-card" aria-label="Promos del mes">
-        <div class="pc-left">
-          <span class="pc-tag">✦ Promos activas todos los meses</span>
-          <h3>¿Buscás la<br>mejor promo?</h3>
-          <p>Tenemos combos especiales y descuentos que cambian cada mes. Escribinos y te contamos cuál aplica.</p>
-          <a href="https://wa.me/50663529946?text=Hola%2C%20%C2%BFcu%C3%A1l%20es%20la%20promo%20del%20mes%20en%20Happy%20Nail%3F%20%E2%9C%A8" target="_blank" rel="noopener noreferrer" class="btn-promo">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2.003a9.997 9.997 0 00-8.591 15.095L2 22l5.032-1.363A9.997 9.997 0 1012.004 2.003zm0 18.257a8.26 8.26 0 01-4.216-1.155l-.302-.18-3.136.849.837-3.07-.197-.314A8.26 8.26 0 1112.004 20.26z"/></svg>
+      <!-- PROMO BANNER -->
+      <div class="promo-banner">
+        <div class="promo-banner-left">
+          <span class="promo-banner-tag">✦ Promos activas todos los meses</span>
+          <h3 class="promo-banner-title">¿Buscás la mejor promo?</h3>
+          <p class="promo-banner-text">Tenemos combos especiales y descuentos que cambian cada mes. Escribinos por WhatsApp y te contamos cuál aplica ahora.</p>
+          <a href="https://wa.me/50663529946?text=Hola%2C%20%C2%BFcu%C3%A1l%20es%20la%20promo%20del%20mes%3F%20%E2%9C%A8" target="_blank" rel="noopener noreferrer" class="promo-banner-btn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2a10 10 0 00-8.591 15.095L2 22l5.032-1.363A10 10 0 1012 2zm0 18.257a8.257 8.257 0 01-4.216-1.155l-.302-.18-3.136.849.837-3.07-.197-.314A8.257 8.257 0 1112 20.257z"/></svg>
             Consultá la promo actual
           </a>
         </div>
-        <div><div class="pc-price">Promos<small>nuevas cada mes ✨</small></div></div>
+        <div class="promo-banner-right">
+          <div class="promo-banner-label">Promos</div>
+          <span class="promo-banner-sub">nuevas cada mes ✨</span>
+        </div>
       </div>
-
-      <div class="price-col">
+            <div class="price-col">
         <h3>Manos</h3>
         <div class="prow"><span class="prow-n">Semi Liso</span><span class="prow-p">₡11,500</span></div>
         <div class="prow"><span class="prow-n">Semi Diseño</span><span class="prow-p">₡12,500</span></div>
@@ -571,13 +845,13 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
         <h2 id="h-redes">Seguinos y sé parte<br>de la <em>comunidad</em></h2>
         <p>Más de 3,100 seguidores en Facebook y una comunidad activa en Instagram donde compartimos trabajos, promos y novedades cada semana.</p>
         <div class="redes-btns">
-          <a href="https://instagram.com/happy.nailcr" target="_blank" rel="noopener noreferrer" class="btn-red btn-ig">📸 &nbsp;Seguir en Instagram @happy.nailcr</a>
-          <a href="https://facebook.com/happy.nailcr" target="_blank" rel="noopener noreferrer" class="btn-red btn-fb">👍 &nbsp;Seguir en Facebook</a>
+          <a href="https://www.instagram.com/happy.nailcr/" target="_blank" rel="noopener noreferrer" class="btn-red btn-ig">📸 &nbsp;Seguir en Instagram @happy.nailcr</a>
+          <a href="https://www.facebook.com/happy.nailcr" target="_blank" rel="noopener noreferrer" class="btn-red btn-fb">👍 &nbsp;Seguir en Facebook</a>
         </div>
       </div>
       <div class="redes-cards">
-        <a href="https://facebook.com/happy.nailcr" target="_blank" rel="noopener noreferrer" class="red-card"><span class="red-icon">📘</span><div class="red-num">3,100+</div><div class="red-label">Seguidores</div><div class="red-name">Facebook</div></a>
-        <a href="https://instagram.com/happy.nailcr" target="_blank" rel="noopener noreferrer" class="red-card"><span class="red-icon">📸</span><div class="red-num">482+</div><div class="red-label">Seguidores</div><div class="red-name">Instagram</div></a>
+        <a href="https://www.facebook.com/happy.nailcr" target="_blank" rel="noopener noreferrer" class="red-card"><span class="red-icon">📘</span><div class="red-num">3,100+</div><div class="red-label">Seguidores</div><div class="red-name">Facebook</div></a>
+        <a href="https://www.instagram.com/happy.nailcr/" target="_blank" rel="noopener noreferrer" class="red-card"><span class="red-icon">📸</span><div class="red-num">482+</div><div class="red-label">Seguidores</div><div class="red-name">Instagram</div></a>
         <div class="red-card" style="cursor:default"><span class="red-icon">⭐</span><div class="red-num">+7</div><div class="red-label">Años en el mercado</div><div class="red-name">Costa Rica</div></div>
         <div class="red-card" style="cursor:default"><span class="red-icon">✨</span><div class="red-num">Promos</div><div class="red-label">Cada mes</div><div class="red-name">Nuevas ofertas siempre</div></div>
       </div>
@@ -594,7 +868,7 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
     <div class="steps-grid">
       <div class="step"><div class="step-num" aria-hidden="true">1</div><h4>Elegí tu servicio</h4><p>Revisá los precios o escribinos. Te asesoramos sobre la técnica ideal sin compromiso.</p></div>
       <div class="step"><div class="step-num" aria-hidden="true">2</div><h4>Agendá tu cita</h4><p>Usá el formulario o escribinos directo por WhatsApp al 6352 9946. Respondemos rápido.</p></div>
-      <div class="step"><div class="step-num" aria-hidden="true">3</div><h4>¡Llegá y brillá!</h4><p>Te esperamos en Plaza Bambú 2do. piso, Tres Ríos. Cita confirmada.</p></div>
+      <div class="step"><div class="step-num" aria-hidden="true">3</div><h4>¡Llegá y brillá!</h4><p>Te esperamos en Plaza Bambú, segundo piso, Calle Vieja, Tres Ríos. Cita confirmada.</p></div>
     </div>
     <div class="steps-cta">
       <a href="https://forms.cloud.microsoft/r/Mqj79jZMaJ" target="_blank" rel="noopener noreferrer" class="btn-wa" style="background:var(--rose2);box-shadow:0 4px 22px rgba(212,135,142,0.28);">Agendá tu cita ✨</a>
@@ -612,22 +886,30 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
     <span class="sec-eyebrow">Contacto</span>
     <h2 class="sec-h2" id="h-contacto">Encontranos</h2>
     <div class="divider" aria-hidden="true"></div>
-    <p class="sec-sub">Plaza Bambú, 2do. piso, Carretera Vieja a Tres Ríos, Cartago.</p>
+    <p class="sec-sub">Plaza Bambú, segundo piso, Calle Vieja, Tres Ríos, Cartago.</p>
     <div class="contact-grid">
       <div class="cinfo">
         <h3>Información de contacto</h3>
-        <div class="cinfo-item"><div class="cinfo-icon" aria-hidden="true">📍</div><div class="cinfo-text"><label>Ubicación</label><p>Plaza Bambú, 2do. piso<br>Carretera Vieja a Tres Ríos<br>La Unión, Cartago · WX5R+G8</p></div></div>
+        <div class="cinfo-item"><div class="cinfo-icon" aria-hidden="true">📍</div><div class="cinfo-text"><label>Ubicación</label><p>Plaza Bambú, segundo piso<br>Calle Vieja, Tres Ríos<br>Cartago<br><a href="https://plus.codes/WX5R+G8" target="_blank" rel="noopener noreferrer" style="color:var(--rose);font-size:0.82rem;">📍 Ver en Google Maps — WX5R+G8</a></p></div></div>
         <div class="cinfo-item"><div class="cinfo-icon" aria-hidden="true">💬</div><div class="cinfo-text"><label>WhatsApp</label><a href="https://wa.me/50663529946" target="_blank" rel="noopener noreferrer">+506 6352 9946</a></div></div>
-        <div class="cinfo-item"><div class="cinfo-icon" aria-hidden="true">📸</div><div class="cinfo-text"><label>Instagram</label><a href="https://instagram.com/happy.nailcr" target="_blank" rel="noopener noreferrer">@happy.nailcr</a></div></div>
-        <div class="cinfo-item"><div class="cinfo-icon" aria-hidden="true">📘</div><div class="cinfo-text"><label>Facebook</label><a href="https://facebook.com/happy.nailcr" target="_blank" rel="noopener noreferrer">happy.nailcr · 3,100+ seguidores</a></div></div>
+        <div class="cinfo-item"><div class="cinfo-icon" aria-hidden="true">📸</div><div class="cinfo-text"><label>Instagram</label><a href="https://www.instagram.com/happy.nailcr/" target="_blank" rel="noopener noreferrer">@happy.nailcr</a></div></div>
+        <div class="cinfo-item"><div class="cinfo-icon" aria-hidden="true">📘</div><div class="cinfo-text"><label>Facebook</label><a href="https://www.facebook.com/happy.nailcr" target="_blank" rel="noopener noreferrer">happy.nailcr · 3,100+ seguidores</a></div></div>
         <div class="cinfo-item"><div class="cinfo-icon" aria-hidden="true">⏰</div><div class="cinfo-text"><label>Horario</label><p>Lunes a Sábado · Abre a las 10am<br>Consultá disponibilidad por WhatsApp</p></div></div>
         <nav class="social-pills" aria-label="Redes sociales">
           <a href="https://wa.me/50663529946" target="_blank" rel="noopener noreferrer" class="spill">WhatsApp</a>
-          <a href="https://instagram.com/happy.nailcr" target="_blank" rel="noopener noreferrer" class="spill">Instagram</a>
-          <a href="https://facebook.com/happy.nailcr" target="_blank" rel="noopener noreferrer" class="spill">Facebook</a>
+          <a href="https://www.instagram.com/happy.nailcr/" target="_blank" rel="noopener noreferrer" class="spill">Instagram</a>
+          <a href="https://www.facebook.com/happy.nailcr" target="_blank" rel="noopener noreferrer" class="spill">Facebook</a>
         </nav>
       </div>
       <div>
+        <!-- Formulario MS 365 Forms -->
+        <div class="ms-form-wrap">
+          <p class="ms-form-title">Agendá tu cita directamente:</p>
+          <a href="https://forms.cloud.microsoft/r/Mqj79jZMaJ" target="_blank" rel="noopener noreferrer" class="ms-form-btn">
+            ✨ Abrir formulario de citas
+          </a>
+          <p class="ms-form-or">— o completá aquí —</p>
+        </div>
         <form class="cform" id="cform" novalidate>
           <div class="frow">
             <div class="field"><label for="f-n">Nombre</label><input type="text" id="f-n" name="nombre" placeholder="Tu nombre" autocomplete="name" required/></div>
@@ -637,16 +919,16 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
             <label for="f-s">Servicio de interés</label>
             <select id="f-s" name="servicio">
               <option value="">Seleccioná un servicio…</option>
-              <option>Semi Liso — ₡11,500</option><option>Semi Diseño — ₡12,500</option>
-              <option>Manicura Semi — ₡15,000</option><option>Manicura Sin Semi Hombre — ₡12,000</option>
-              <option>Manicura Rusa — ₡15,500</option><option>Rubber / Calcio — ₡16,500</option>
-              <option>Funda de Acrílico — ₡16,500</option><option>Luminary — ₡19,500</option>
-              <option>Gel X — ₡21,500</option><option>Acrílico — ₡23,000</option>
-              <option>Pedicura — ₡18,200</option><option>Pedicura Hombre — ₡16,000</option>
-              <option>Combo Happy — ₡26,000</option><option>Combo Hombre — ₡22,000</option>
-              <option>Rubber & Pedi — ₡30,500</option><option>Calcio & Pedi — ₡32,500</option>
-              <option>Luminary & Pedi — ₡33,500</option><option>Mantenimiento & Pedi — ₡32,500</option>
-              <option>Gel X & Pedi — ₡35,200</option><option>Acrílico & Pedi — ₡35,000</option>
+              <option>Semipermanente Liso</option><option>Semipermanente Diseño</option>
+              <option>Manicura Semi</option><option>Manicura Sin Semi — Hombre</option>
+              <option>Manicura Rusa</option><option>Rubber / Calcio</option>
+              <option>Funda de Acrílico</option><option>Luminary</option>
+              <option>Gel X</option><option>Acrílico</option>
+              <option>Pedicura</option><option>Pedicura — Hombre</option>
+              <option>Combo Happy</option><option>Combo — Hombre</option>
+              <option>Rubber &amp; Pedicura</option><option>Calcio &amp; Pedicura</option>
+              <option>Luminary &amp; Pedicura</option><option>Mantenimiento &amp; Pedicura</option>
+              <option>Gel X &amp; Pedicura</option><option>Acrílico &amp; Pedicura</option>
               <option>Quiero saber la promo del mes ✨</option><option>No sé, quiero asesoría</option>
             </select>
           </div>
@@ -660,7 +942,7 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
       </div>
     </div>
     <div class="map-wrap">
-      <iframe src="https://maps.google.com/maps?q=9.90886,-84.00921&z=17&output=embed" title="Happy Nail — Plaza Bambú, Tres Ríos" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://maps.google.com/maps?q=Happy+Nail+Plaza+Bambu+Tres+Rios+Cartago+Costa+Rica&z=18&output=embed" title="Happy Nail — Plaza Bambú, Tres Ríos" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>
@@ -668,16 +950,19 @@ footer{background:#1A0C14;padding:48px 28px 30px;text-align:center}
 
 <!-- ══ FOOTER ══════════════════════════════════════════════════ -->
 <footer>
-  <img src="logo.png" alt="Happy Nail — Manicura & Pedicura" class="footer-logo-img" width="200" height="54" loading="lazy"/>
-  <span class="footer-tag">Manicura &amp; Pedicura · Plaza Bambú, 2do. piso · Tres Ríos, Cartago · +7 años de experiencia</span>
+  <div class="footer-logo-text">
+    <span class="footer-logo-main">Happy Nail</span>
+    <span class="footer-logo-sub">Manicura &amp; Pedicura</span>
+  </div>
+  <span class="footer-tag">Manicura &amp; Pedicura · Plaza Bambú 2do. piso · Calle Vieja, Tres Ríos · Cartago · +7 años de experiencia</span>
   <nav aria-label="Navegación pie de página">
     <ul class="footer-nav" role="list">
       <li><a href="#nosotras">Nosotras</a></li>
       <li><a href="#servicios">Servicios</a></li>
       <li><a href="#precios">Precios</a></li>
       <li><a href="#redes">Redes</a></li>
-      <li><a href="https://instagram.com/happy.nailcr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-      <li><a href="https://facebook.com/happy.nailcr" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      <li><a href="https://www.instagram.com/happy.nailcr/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="https://www.facebook.com/happy.nailcr" target="_blank" rel="noopener noreferrer">Facebook</a></li>
       <li><a href="https://wa.me/50663529946" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
